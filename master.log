@@ -1,0 +1,244 @@
+commit 87bc53c59237c39d78d18ceb79e78cbdc339c608
+Author: Recolic Keghart <root@recolic.net>
+Date:   Sat May 2 21:50:16 2020 +0800
+
+    parallel test script now supports gpu_factor tune
+
+commit 4bedf6cbe7f35b8907d7d07524f7f05021937b74
+Author: Recolic Keghart <root@recolic.net>
+Date:   Sat May 2 20:59:17 2020 +0800
+
+    adjust outputs and add script for report writing
+
+commit 978a252c2a80771241caa22efa305ff8a9f9dbc2
+Author: Recolic Keghart <root@recolic.net>
+Date:   Fri Apr 24 21:57:24 2020 +0800
+
+    add gpu_factor for load_balance, adjust main logic
+
+commit 54047695fa81260d1f9b4009f8b47b9432f9bc01
+Author: Recolic Keghart <root@recolic.net>
+Date:   Fri Apr 24 21:48:09 2020 +0800
+
+    allow multi-cpu
+
+commit 634a6b0d76cfa020475b3ae6b87fbc032fff748a
+Author: Recolic Keghart <root@recolic.net>
+Date:   Fri Apr 24 20:19:10 2020 +0800
+
+    improv gpu performance
+
+commit 7ace5ecdaad014a99d1c477af09e0a5137829198
+Author: Recolic Keghart <root@recolic.net>
+Date:   Sun Apr 19 21:27:04 2020 +0800
+
+    NO_PERFORMANCE_IMPROV: simplified un-important logic in rebalancing_impl_cpu
+
+commit 39354a427173ab27e3ce0de7d05a7cce7fdfd1fd
+Author: Recolic Keghart <root@recolic.net>
+Date:   Sun Apr 19 20:44:38 2020 +0800
+
+    compact_kernel_cpu rewritten
+
+commit 0ecdf794620b93463fb60924e3ab482c1681b589
+Merge: 52152bf 30fd25a
+Author: Recolic Keghart <root@recolic.net>
+Date:   Fri Apr 17 11:13:39 2020 +0000
+
+    multidev support done, debug finished, allow being merged. !3
+
+commit 30fd25a8496a51d43f62006e3a68005fe5a75832
+Author: Recolic Keghart <root@recolic.net>
+Date:   Fri Apr 17 11:13:39 2020 +0000
+
+    Squashed commit: multidev support done
+
+commit 52152bf9fec211382e380e6dff09f7edb0073ad6
+Author: Recolic Keghart <root@recolic.net>
+Date:   Wed Apr 8 01:22:42 2020 +0800
+
+    add some comments. However, you MUST rely on paper document for bfs alg
+
+commit dbaf4c81ce3a0566e6b59795f72c60c1e4ae3ed3
+Author: Recolic Keghart <root@recolic.net>
+Date:   Sun Apr 5 20:54:05 2020 +0800
+
+    macro bugfix
+
+commit 58e6e38ed16e35e83a087858382fc638992d252a
+Author: Recolic Keghart <root@recolic.net>
+Date:   Tue Mar 31 03:03:57 2020 +0800
+
+    adjust cpu/gpu switch scripts
+
+commit 0d2e7121568f5ecde1453fa1463f65d2fb973ac2
+Merge: f6e39a7 8b21831
+Author: Recolic Keghart <root@recolic.net>
+Date:   Mon Mar 30 10:06:59 2020 +0000
+
+    Merge branch 'bfs_cpu' into 'master'
+    
+    Bfs cpu
+    
+    See merge request root/gpma_bfs!2
+
+commit 8b21831fd467c077a59ac5a9d183a972d6292e33
+Author: Recolic Keghart <root@recolic.net>
+Date:   Tue Mar 31 02:06:45 2020 +0800
+
+    confirmed, cpu has correct result. Add the previously-removed cpu_rebalance parallel
+
+commit 876686a3bf6f8b379ca22cb78f4c65a8d5156696
+Author: Recolic Keghart <root@recolic.net>
+Date:   Mon Mar 30 11:06:30 2020 +0800
+
+    fix cpu bug, but cpu result seems still incorrect, maybe value error
+
+commit 4a91599e90ffecc3550debc6a1621862d7ecf1a7
+Author: Recolic Keghart <root@recolic.net>
+Date:   Sun Mar 29 10:49:13 2020 +0800
+
+    adjust scripts for gpma_bfs<CPU>, but discovered update_gpma<CPU> bug
+
+commit e6fbb5680d8e2dd80ee02ce3f43260e7cfc3146d
+Author: Recolic Keghart <root@recolic.net>
+Date:   Sun Mar 29 02:47:13 2020 +0800
+
+    first stage
+
+commit f6e39a7aac80249252016fe664cd461559d758c8
+Author: Recolic Keghart <root@recolic.net>
+Date:   Sat Mar 28 09:19:56 2020 +0800
+
+    fix more loss of anySync for cub::? functions
+
+commit 6f5ab3d50c8bb474a26792f2d16c789373a98cca
+Author: Recolic Keghart <root@recolic.net>
+Date:   Sat Mar 28 08:58:00 2020 +0800
+
+    fix gpu bug
+
+commit 2e375630644c3e5005caf39e0279f3b5e443b040
+Author: Recolic Keghart <root@recolic.net>
+Date:   Fri Mar 27 23:27:42 2020 +0800
+
+    gpu version bugfix
+
+commit 94a1493dbdef996de94e3099515b295d0ced4e24
+Merge: 4701bc2 7a60dc9
+Author: Recolic Keghart <root@recolic.net>
+Date:   Wed Mar 25 16:19:52 2020 +0000
+
+    Merge branch 'cpu_support' into 'master'
+    
+    Cpu support
+    
+    See merge request root/gpma_bfs!1
+
+commit 7a60dc960ea62e3e0dfb808b17d00009ac54ca5a
+Author: Recolic Keghart <root@recolic.net>
+Date:   Wed Mar 25 16:19:52 2020 +0000
+
+    Cpu support
+
+commit 4701bc2bc0bc9cf8e5d73b4872fb322acf270946
+Author: Recolic Keghart <root@recolic.net>
+Date:   Wed Mar 18 06:01:13 2020 -0700
+
+    save before STARTING CPU support
+
+commit ee39565742b709449ebe1eea37aaba5ad295266f
+Author: Recolic Keghart <root@recolic.net>
+Date:   Wed Mar 18 03:20:22 2020 -0700
+
+    still debugging and some reconstruction
+
+commit 8273bebf5d1ece1221e86e65a78ac1ca48be5e0b
+Author: Recolic Keghart <root@recolic.net>
+Date:   Mon Mar 16 03:21:39 2020 -0700
+
+    recons
+
+commit 26d45d9442c332aa9e6fcea8464d54c64cf0e634
+Author: Recolic Keghart <root@recolic.net>
+Date:   Mon Mar 16 03:03:04 2020 -0700
+
+    move init to constructor
+
+commit ad4d30abd3a3a0f9f364993795cafd6cc357fd6b
+Author: Recolic Keghart <root@recolic.net>
+Date:   Sun Mar 15 11:02:01 2020 -0700
+
+    debug
+
+commit de97a0a7c8dd1d8b07a7afb23bd51ea065fbd128
+Author: Recolic Keghart <root@recolic.net>
+Date:   Fri Mar 13 02:09:02 2020 -0700
+
+    try adjusting *_NONE definition
+
+commit 1dfd1fcabf17018116a2516d198d05f1ed761f1f
+Author: Recolic Keghart <root@recolic.net>
+Date:   Fri Mar 13 02:04:41 2020 -0700
+
+    working on code
+
+commit ac92d69c043420248853946b09af138d11f1ba5d
+Author: Recolic Keghart <root@recolic.net>
+Date:   Thu Mar 12 05:08:51 2020 -0700
+
+    working on code
+
+commit d0a4f5375c3533cd67fce45c9c95c0f4620aec78
+Author: Recolic Keghart <root@recolic.net>
+Date:   Thu Mar 12 04:25:18 2020 -0700
+
+    reports
+
+commit ea8135d5f80c356947855d5cd463a0d3c19d6679
+Author: Recolic Keghart <root@recolic.net>
+Date:   Mon Mar 9 13:09:12 2020 -0700
+
+    debug, and report
+
+commit 5d56277f3bc1da4062aa971c156604c7a4d9f0f8
+Author: Recolic Keghart <root@recolic.net>
+Date:   Mon Mar 9 13:09:04 2020 -0700
+
+    debug, and report
+
+commit 8618f0139239bbfc5249afe38cfb63d3a87e95e0
+Author: Recolic Keghart <root@recolic.net>
+Date:   Mon Mar 9 07:09:33 2020 -0700
+
+    debug
+
+commit 71484ae8a0fb50cefc01ca786d9f838522577226
+Author: Recolic Keghart <root@recolic.net>
+Date:   Mon Mar 9 06:22:32 2020 -0700
+
+    debug update
+
+commit d907c4ecb088459f565e5e770ddbc46e37e059e2
+Author: Recolic Keghart <root@recolic.net>
+Date:   Mon Mar 9 03:47:48 2020 -0700
+
+    insert debug things
+
+commit a605807bc5d9cb712df382102bfc136d24cae572
+Author: Mo Sha <desert0616@gmail.com>
+Date:   Thu Apr 26 14:42:25 2018 +0800
+
+    add cpu pma baseline
+
+commit cd0261bf50847ca5efcddac5a47a1fd66445430e
+Author: Mo Sha <desert0616@gmail.com>
+Date:   Tue Apr 17 11:21:36 2018 +0800
+
+    init
+
+commit dc7947d43fd8e3e378962ec1dc2e4bdbf6d9084f
+Author: Mo Sha <desert0616@users.noreply.github.com>
+Date:   Tue Apr 17 11:20:24 2018 +0800
+
+    Initial commit
